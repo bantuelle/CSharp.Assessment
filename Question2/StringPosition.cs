@@ -1,4 +1,8 @@
-﻿namespace Question2
+﻿using System;
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("UnitTests")]
+namespace Question2
 {
     internal class StringPosition
     {

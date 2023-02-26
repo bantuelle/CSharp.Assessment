@@ -42,8 +42,8 @@ namespace Question2
                 char currChar = data[i];
                 char prevChar = data[i - 1];
 
-                //Check if the current character is a letter and if it matches the previous character
-                if (char.IsLetter(currChar) && char.ToUpper(currChar) == char.ToUpper(prevChar))
+                //Check if the current character is a letter and not a space, and if it matches the previous character
+                if (char.IsLetter(currChar) && currChar != ' ' && char.ToUpper(currChar) == char.ToUpper(prevChar))
                 {
                     // Add the duplicated letter and its position to the duplicates list
                     duplicates.Add(new StringPosition { DuplicatedLetter = char.ToUpper(currChar), DuplicatedPosition = i });

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Question1
 {
     class Program
@@ -128,11 +129,11 @@ namespace Question1
 
             //Set the validity of the ID number
             person.isValidIDNumber = (checksum == idDigits[12]);
-            
+
             //Return the person object
             return person;
-            
+
         }
-        
+
     }
 }
